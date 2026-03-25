@@ -36,15 +36,15 @@
                 <tr class="border-t border-mist">
                     <td class="px-4 py-3">{{ $item->product->name }}</td>
                     <td class="px-4 py-3 text-right">{{ $item->quantity }}</td>
-                    <td class="px-4 py-3 text-right">${{ number_format($item->unit_price, 2) }}</td>
-                    <td class="px-4 py-3 text-right font-medium">${{ number_format($item->subtotal, 2) }}</td>
+                    <td class="px-4 py-3 text-right">RD${{ number_format($item->unit_price, 2) }}</td>
+                    <td class="px-4 py-3 text-right font-medium">RD${{ number_format($item->subtotal, 2) }}</td>
                 </tr>
                 @endforeach
             </tbody>
             <tfoot>
                 <tr class="border-t-2 border-ink">
                     <td colspan="3" class="px-4 py-3 text-right font-medium">TOTAL</td>
-                    <td class="px-4 py-3 text-right font-display text-xl">${{ number_format($sale->total, 2) }}</td>
+                    <td class="px-4 py-3 text-right font-display text-xl">RD${{ number_format($sale->total, 2) }}</td>
                 </tr>
             </tfoot>
         </table>

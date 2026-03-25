@@ -21,7 +21,7 @@
                 <span class="badge badge-red">Inactivo</span>
             @endif
         </div>
-        <p class="font-display text-3xl mb-4">${{ number_format($m->price, 2) }}</p>
+        <p class="font-display text-3xl mb-4">RD${{ number_format($m->price, 2) }}</p>
         @if($m->description)
             <p class="text-sm text-ash mb-4 leading-relaxed flex-1">{{ $m->description }}</p>
         @endif

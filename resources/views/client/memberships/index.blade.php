@@ -17,7 +17,7 @@
                     <div class="bg-paper p-8 flex flex-col anim-{{ $i + 1 }}">
                         <div class="mb-6 pb-6 border-b border-mist">
                             <h2 class="font-display text-3xl tracking-wide">{{ strtoupper($m->name) }}</h2>
-                            <p class="text-4xl font-display mt-2">${{ number_format($m->price, 2) }}</p>
+                            <p class="text-4xl font-display mt-2">RD${{ number_format($m->price, 2) }}</p>
                             <p class="text-xs text-ash mt-1">/ {{ $m->duration_days }} días</p>
                         </div>
 

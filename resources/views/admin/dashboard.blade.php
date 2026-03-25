@@ -6,11 +6,11 @@
 {{-- Stats --}}
 <div class="grid sm:grid-cols-3 gap-4 mb-10">
     <div class="stat anim-1">
-        <p class="stat-val">${{ number_format($salesToday, 2) }}</p>
+        <p class="stat-val">RD${{ number_format($salesToday, 2) }}</p>
         <p class="stat-label">Ventas hoy</p>
     </div>
     <div class="stat anim-2">
-        <p class="stat-val">${{ number_format($salesMonth, 2) }}</p>
+        <p class="stat-val">RD${{ number_format($salesMonth, 2) }}</p>
         <p class="stat-label">Ventas este mes</p>
     </div>
     <div class="stat anim-3 {{ $lowStock > 0 ? 'border-red-400' : '' }}">

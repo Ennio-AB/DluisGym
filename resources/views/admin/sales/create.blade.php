@@ -24,7 +24,7 @@
                     <select name="items[0][product_id]" class="input">
                         <option value="">— Seleccionar —</option>
                         @foreach($products as $p)
-                            <option value="{{ $p->id }}">{{ $p->name }} — ${{ number_format($p->sale_price, 2) }} (stock: {{ $p->stock }})</option>
+                            <option value="{{ $p->id }}">{{ $p->name }} — RD${{ number_format($p->sale_price, 2) }} (stock: {{ $p->stock }})</option>
                         @endforeach
                     </select>
                 </div>

@@ -15,7 +15,7 @@
         <div class="space-y-8 anim-2">
             <div class="border-l-2 border-ink pl-6">
                 <p class="text-xs text-ash uppercase tracking-widest mb-1">Dirección</p>
-                <p class="font-medium">Calle Principal #123<br>Col. Centro, Guadalajara, Jalisco</p>
+                <p class="font-medium">Av. Winston Churchill #45<br>Piantini, Santo Domingo, D.N.</p>
             </div>
             <div class="border-l-2 border-ink pl-6">
                 <p class="text-xs text-ash uppercase tracking-widest mb-1">Horario</p>
@@ -27,7 +27,7 @@
             </div>
             <div class="border-l-2 border-ink pl-6">
                 <p class="text-xs text-ash uppercase tracking-widest mb-1">Contacto</p>
-                <p class="text-sm">+52 33 1234 5678</p>
+                <p class="text-sm">+1 (809) 555-1234</p>
                 <p class="text-sm text-ash">info@dluisgym.com</p>
             </div>
         </div>

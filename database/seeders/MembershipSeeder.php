@@ -13,7 +13,7 @@ class MembershipSeeder extends Seeder
             [
                 'name' => 'Básico',
                 'description' => 'Acceso al gimnasio en horario estándar.',
-                'price' => 29.99,
+                'price' => 1500.00,
                 'duration_days' => 30,
                 'features' => ['Acceso al área de pesas', 'Horario 6am - 8pm', 'Casillero incluido'],
                 'is_active' => true,
@@ -21,7 +21,7 @@ class MembershipSeeder extends Seeder
             [
                 'name' => 'Pro',
                 'description' => 'Acceso completo + clases grupales.',
-                'price' => 49.99,
+                'price' => 2500.00,
                 'duration_days' => 30,
                 'features' => ['Todo lo del plan Básico', 'Clases grupales ilimitadas', 'Acceso extendido 5am - 10pm', 'Evaluación física mensual'],
                 'is_active' => true,
@@ -29,7 +29,7 @@ class MembershipSeeder extends Seeder
             [
                 'name' => 'Elite',
                 'description' => 'Acceso total + entrenador personal.',
-                'price' => 89.99,
+                'price' => 4500.00,
                 'duration_days' => 30,
                 'features' => ['Todo lo del plan Pro', '4 sesiones con entrenador personal', 'Plan nutricional básico', 'Acceso 24/7', 'Descuento 10% en cafetería'],
                 'is_active' => true,

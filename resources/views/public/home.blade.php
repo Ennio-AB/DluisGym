@@ -7,7 +7,7 @@
 <section class="grain bg-ink text-paper overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-16 items-end">
         <div>
-            <p class="text-xs text-ash uppercase tracking-[0.3em] mb-6 anim-1">Guadalajara · Est. 2018</p>
+            <p class="text-xs text-ash uppercase tracking-[0.3em] mb-6 anim-1">Santo Domingo · Est. 2018</p>
             <h1 class="font-display text-[7rem] leading-none tracking-wide anim-2">
                 FORJA<br>TU<br>CUERPO.
             </h1>

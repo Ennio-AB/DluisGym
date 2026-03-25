@@ -19,15 +19,15 @@
 {{-- Summary --}}
 <div class="grid sm:grid-cols-3 gap-4 mb-10">
     <div class="stat anim-1">
-        <p class="stat-val">${{ number_format($income, 2) }}</p>
+        <p class="stat-val">RD${{ number_format($income, 2) }}</p>
         <p class="stat-label">Ingresos</p>
     </div>
     <div class="stat anim-2">
-        <p class="stat-val text-ash">${{ number_format($cost, 2) }}</p>
+        <p class="stat-val text-ash">RD${{ number_format($cost, 2) }}</p>
         <p class="stat-label">Costo</p>
     </div>
     <div class="stat anim-3 {{ $profit >= 0 ? '' : 'border-red-400' }}">
-        <p class="stat-val {{ $profit >= 0 ? 'text-green-700' : 'text-red-600' }}">${{ number_format($profit, 2) }}</p>
+        <p class="stat-val {{ $profit >= 0 ? 'text-green-700' : 'text-red-600' }}">RD${{ number_format($profit, 2) }}</p>
         <p class="stat-label">Ganancia neta</p>
     </div>
 </div>
@@ -40,7 +40,7 @@
         @foreach($byDay as $date => $total)
         <div class="flex items-center justify-between px-5 py-3 border-b border-mist last:border-b-0 text-sm">
             <span class="text-ash">{{ \Carbon\Carbon::parse($date)->format('d/m/Y') }}</span>
-            <span class="font-medium">${{ number_format($total, 2) }}</span>
+            <span class="font-medium">RD${{ number_format($total, 2) }}</span>
         </div>
         @endforeach
     </div>
@@ -66,7 +66,7 @@
                 <tr class="border-t border-mist">
                     <td class="px-4 py-3 text-ash">#{{ $sale->id }}</td>
                     <td class="px-4 py-3">{{ $sale->sold_at->format('d/m/Y H:i') }}</td>
-                    <td class="px-4 py-3 text-right font-medium">${{ number_format($sale->total, 2) }}</td>
+                    <td class="px-4 py-3 text-right font-medium">RD${{ number_format($sale->total, 2) }}</td>
                     <td class="px-4 py-3 text-right">
                         <a href="{{ route('admin.sales.show', $sale) }}" class="text-ash hover:text-ink text-xs underline">Ver</a>
                     </td>

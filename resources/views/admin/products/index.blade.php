@@ -25,8 +25,8 @@
             <tr class="border-t border-mist hover:bg-mist/30 transition-colors">
                 <td class="px-4 py-3 font-medium">{{ $p->name }}</td>
                 <td class="px-4 py-3 text-ash hidden sm:table-cell">{{ $p->category }}</td>
-                <td class="px-4 py-3 text-right">${{ number_format($p->sale_price, 2) }}</td>
-                <td class="px-4 py-3 text-right text-ash hidden md:table-cell">${{ number_format($p->cost_price, 2) }}</td>
+                <td class="px-4 py-3 text-right">RD${{ number_format($p->sale_price, 2) }}</td>
+                <td class="px-4 py-3 text-right text-ash hidden md:table-cell">RD${{ number_format($p->cost_price, 2) }}</td>
                 <td class="px-4 py-3 text-right {{ $p->isLowStock() ? 'text-red-600 font-medium' : '' }}">
                     {{ $p->stock }}
                 </td>
