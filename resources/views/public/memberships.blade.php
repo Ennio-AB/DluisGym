@@ -10,7 +10,10 @@
             <span class="text-fire">●</span> Elige tu plan
         </p>
         <h1 class="font-display text-6xl tracking-wide">MEMBRESÍAS</h1>
-        <div class="w-16 h-1 bg-fire mt-4"></div>
+        <div class="w-16 h-1 bg-fire mt-4 mb-6"></div>
+        <p class="text-ash max-w-lg leading-relaxed">
+            Planes mensuales sin contratos ni letras pequeñas. Elige el que más se adapte a tu ritmo y empieza hoy mismo.
+        </p>
     </div>
 
     @if($memberships->isEmpty())
@@ -60,9 +63,13 @@
         </div>
     @endif
 
-    <p class="mt-10 text-xs text-ash anim-4">
-        Para más información sobre pagos y condiciones, visítanos en el gimnasio.
-    </p>
+    <div class="mt-12 border border-mist p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 anim-4">
+        <div>
+            <p class="text-sm font-medium">¿Tienes preguntas sobre los planes?</p>
+            <p class="text-xs text-ash mt-0.5">Visítanos o escríbenos, con gusto te orientamos.</p>
+        </div>
+        <a href="{{ route('location') }}" class="btn-ghost flex-shrink-0">Ver Ubicación</a>
+    </div>
 </div>
 
 @endsection

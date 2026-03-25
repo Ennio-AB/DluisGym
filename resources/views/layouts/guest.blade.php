@@ -11,11 +11,11 @@
 
     {{-- Left panel --}}
     <div class="hidden lg:flex flex-col justify-between w-1/2 grain bg-steel border-r border-iron p-12">
-        <a href="{{ route('home') }}" class="font-display text-4xl tracking-widest text-paper">
-            D LUIS GYM
+        <a href="{{ route('home') }}" class="font-display text-4xl tracking-widest">
+            <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
         </a>
         <div>
-            <p class="font-display text-6xl leading-none text-paper mb-4">FORJA<br>TU<br>CUERPO.</p>
+            <p class="font-display text-6xl leading-none text-paper mb-4">FORJA<br><span class="text-fire">TU</span><br>CUERPO.</p>
             <p class="text-ash text-sm">Cafetería · Membresías · Entrenamiento</p>
         </div>
         <p class="text-xs text-iron">© {{ date('Y') }} D Luis Gym</p>
