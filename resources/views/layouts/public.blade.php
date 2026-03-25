@@ -9,31 +9,28 @@
 </head>
 <body class="min-h-screen bg-paper text-ink antialiased flex flex-col">
 
+    {{-- Fire stripe at very top --}}
+    <div class="h-1 bg-fire w-full"></div>
+
     <nav class="bg-ink border-b border-iron sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="{{ route('home') }}" class="font-display text-2xl text-paper tracking-widest">
-                D LUIS GYM
+            <a href="{{ route('home') }}" class="font-display text-2xl tracking-widest flex items-center gap-2">
+                <span class="text-fire">D</span><span class="text-paper">LUIS GYM</span>
             </a>
             <div class="flex items-center gap-6 text-sm">
                 <a href="{{ route('memberships') }}"
-                   class="text-ash hover:text-paper transition-colors {{ request()->routeIs('memberships') ? 'text-paper' : '' }}">
+                   class="transition-colors {{ request()->routeIs('memberships') ? 'text-fire' : 'text-ash hover:text-paper' }}">
                     Membresías
                 </a>
                 <a href="{{ route('location') }}"
-                   class="text-ash hover:text-paper transition-colors {{ request()->routeIs('location') ? 'text-paper' : '' }}">
+                   class="transition-colors {{ request()->routeIs('location') ? 'text-fire' : 'text-ash hover:text-paper' }}">
                     Ubicación
                 </a>
                 @auth
-                    <a href="{{ route('dashboard') }}" class="btn-primary text-xs px-4 py-2">
-                        Mi Portal
-                    </a>
+                    <a href="{{ route('dashboard') }}" class="btn-primary text-xs px-4 py-2">Mi Portal</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-ash hover:text-paper transition-colors">
-                        Ingresar
-                    </a>
-                    <a href="{{ route('register') }}" class="btn-primary text-xs px-4 py-2">
-                        Registrarse
-                    </a>
+                    <a href="{{ route('login') }}" class="text-ash hover:text-paper transition-colors">Ingresar</a>
+                    <a href="{{ route('register') }}" class="btn-primary text-xs px-4 py-2">Registrarse</a>
                 @endauth
             </div>
         </div>
@@ -46,13 +43,15 @@
     <footer class="bg-ink border-t border-iron px-6 py-8 mt-20">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-                <p class="font-display text-xl text-paper tracking-widest">D LUIS GYM</p>
+                <p class="font-display text-xl tracking-widest">
+                    <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
+                </p>
                 <p class="text-xs text-ash mt-1">Tu mejor versión empieza aquí.</p>
             </div>
             <div class="flex gap-6 text-xs text-ash">
-                <a href="{{ route('memberships') }}" class="hover:text-paper transition-colors">Membresías</a>
-                <a href="{{ route('location') }}" class="hover:text-paper transition-colors">Ubicación</a>
-                <a href="{{ route('login') }}" class="hover:text-paper transition-colors">Ingresar</a>
+                <a href="{{ route('memberships') }}" class="hover:text-fire transition-colors">Membresías</a>
+                <a href="{{ route('location') }}" class="hover:text-fire transition-colors">Ubicación</a>
+                <a href="{{ route('login') }}" class="hover:text-fire transition-colors">Ingresar</a>
             </div>
         </div>
         <p class="text-center text-xs text-iron mt-6">© {{ date('Y') }} D Luis Gym. Todos los derechos reservados.</p>

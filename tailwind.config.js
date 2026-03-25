@@ -12,22 +12,24 @@ export default {
         extend: {
             fontFamily: {
                 display: ['"Bebas Neue"', 'sans-serif'],
-                body: ['"DM Sans"', 'sans-serif'],
+                body:    ['"DM Sans"', 'sans-serif'],
             },
             colors: {
-                ink: '#0a0a0a',
+                ink:   '#0a0a0a',
                 paper: '#f5f5f0',
                 steel: '#1c1c1c',
-                iron: '#2a2a2a',
-                mist: '#e8e8e0',
-                ash: '#6b6b6b',
+                iron:  '#2a2a2a',
+                mist:  '#e8e8e0',
+                ash:   '#6b6b6b',
+                fire:  '#e5312b',  // accent — energy, intensity
+                ember: '#ff6b5b',  // fire hover / lighter
             },
             animation: {
                 'fade-up': 'fadeUp 0.5s ease forwards',
             },
             keyframes: {
                 fadeUp: {
-                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '0%':   { opacity: '0', transform: 'translateY(20px)' },
                     '100%': { opacity: '1', transform: 'translateY(0)' },
                 },
             },
