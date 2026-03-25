@@ -13,11 +13,8 @@
     <aside class="w-56 min-h-screen bg-ink flex flex-col flex-shrink-0">
         {{-- Logo --}}
         <div class="px-6 py-5 border-b border-iron">
-            <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2.5">
-                <x-logo-icon class="h-8 text-fire flex-shrink-0"/>
-                <span class="font-display text-xl tracking-widest leading-none">
-                    <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
-                </span>
+            <a href="{{ route('admin.dashboard') }}" class="font-display text-xl tracking-widest block">
+                <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
             </a>
             <span class="inline-block mt-2 px-2 py-0.5 text-[10px] bg-fire text-white uppercase tracking-widest">Admin</span>
         </div>

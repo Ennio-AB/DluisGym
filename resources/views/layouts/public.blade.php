@@ -14,11 +14,8 @@
 
     <nav class="bg-ink border-b border-iron sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="{{ route('home') }}" class="flex items-center gap-3">
-                <x-logo-icon class="h-9 text-fire flex-shrink-0"/>
-                <span class="font-display text-2xl tracking-widest leading-none">
-                    <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
-                </span>
+            <a href="{{ route('home') }}" class="font-display text-2xl tracking-widest">
+                <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
             </a>
             <div class="flex items-center gap-6 text-sm">
                 <a href="{{ route('memberships') }}"
@@ -45,14 +42,11 @@
 
     <footer class="bg-ink border-t border-iron px-6 py-8 mt-20">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div class="flex items-center gap-3">
-                <x-logo-icon class="h-8 text-fire flex-shrink-0"/>
-                <div>
-                    <p class="font-display text-xl tracking-widest leading-none">
-                        <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
-                    </p>
-                    <p class="text-xs text-ash mt-1">Tu mejor versión empieza aquí.</p>
-                </div>
+            <div>
+                <p class="font-display text-xl tracking-widest">
+                    <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
+                </p>
+                <p class="text-xs text-ash mt-1">Tu mejor versión empieza aquí.</p>
             </div>
             <div class="flex gap-6 text-xs text-ash">
                 <a href="{{ route('memberships') }}" class="hover:text-fire transition-colors">Membresías</a>

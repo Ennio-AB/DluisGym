@@ -11,11 +11,8 @@
 
     {{-- Left panel --}}
     <div class="hidden lg:flex flex-col justify-between w-1/2 grain bg-steel border-r border-iron p-12">
-        <a href="{{ route('home') }}" class="flex items-center gap-3">
-            <x-logo-icon class="h-12 text-fire flex-shrink-0"/>
-            <span class="font-display text-3xl tracking-widest leading-none">
-                <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
-            </span>
+        <a href="{{ route('home') }}" class="font-display text-4xl tracking-widest">
+            <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
         </a>
         <div>
             <p class="font-display text-6xl leading-none text-paper mb-4">FORJA<br><span class="text-fire">TU</span><br>CUERPO.</p>
@@ -27,11 +24,8 @@
     {{-- Right panel --}}
     <div class="flex-1 flex flex-col items-center justify-center px-6 py-12">
         <div class="w-full max-w-sm">
-            <a href="{{ route('home') }}" class="lg:hidden flex items-center gap-3 mb-10">
-                <x-logo-icon class="h-10 text-fire flex-shrink-0"/>
-                <span class="font-display text-2xl tracking-widest leading-none">
-                    <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
-                </span>
+            <a href="{{ route('home') }}" class="lg:hidden block font-display text-3xl text-paper mb-10 tracking-widest">
+                <span class="text-fire">D</span><span class="text-paper"> LUIS GYM</span>
             </a>
             {{ $slot }}
         </div>
